@@ -42,9 +42,9 @@ async function fakeSignup({
 
 async function fakeUser({
   campaign = '',
-  email = 'ed@edmarkey.com',
+  email = 'marquita@marquitabradshaw.com',
   password = 'password',
-  firstName = 'Ed',
+  firstName = 'Marquita',
   zip = '00000',
   emailFrequency = WEEKLY_EMAIL,
   role = USER_ROLE,
@@ -93,8 +93,8 @@ async function fakeToken({
 async function fakeMedia({
   _id = 'default',
   type = 'image',
-  source = 'https://ed-markey-supporter-photos.s3.amazonaws.com/em-header-original.jpg',
-  alt = 'Ed at the Podium',
+  source = 'https://raw.githubusercontent.com/priya-chatwani/friendbank/master/public/assets/marquitarally.jpg',
+  alt = 'Marquita at a rally',
 }) {
   const client = await MongoClient.connect(MONGODB_URL, { useUnifiedTopology: true });
   const db = client.db();
@@ -103,8 +103,8 @@ async function fakeMedia({
   const result = await media.insertOne({
     _id: 'default',
     type: 'image',
-    source: 'https://ed-markey-supporter-photos.s3.amazonaws.com/em-header-original.jpg',
-    alt: 'Ed at the Podium',
+    source = 'https://raw.githubusercontent.com/priya-chatwani/friendbank/master/public/assets/marquitarally.jpg',
+    alt = 'Marquita at a rally',
   });
 
   return result.ops[0];
@@ -112,7 +112,7 @@ async function fakeMedia({
 
 async function fakeCampaign({
   domains = ['api:5000'],
-  name = 'Team Markey',
+  name = 'Team Bradshaw',
   config = {
     media: [
       'default',
