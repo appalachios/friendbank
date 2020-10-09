@@ -31,7 +31,7 @@ services:
       - "5000:5000"
     environment:
       - PORT=5000
-      - MONGODB_URL=mongodb://bshawfriendbank:eqGfvqgLtaG8gV4@iad2-c13-0.mongo.objectrocket.com:53698,iad2-c13-1.mongo.objectrocket.com:53698,iad2-c13-2.mongo.objectrocket.com:53698/friendbank?replicaSet=14854e07ea3a49569994bf6ee6e47977
+      - MONGODB_URL=mongodb://bshawfriendbank:eqGfvqgLtaG8gV4@iad2-c13-0.mongo.objectrocket.com:53698
       - SEED_LOCALHOST_CAMPAIGN=true
       - DEBUG_CRM_SIGNUP=true
     env_file:
