@@ -60,7 +60,7 @@ const {
   BSD_SIGNUP_CODE_ID,
   BSD_SIGNUP_SUPPORT_ID,
   BSD_SIGNUP_VOLUNTEER_ID,
-
+  DEBUG_CRM_SIGNUP=true,
   IS_PROD,
 } = process.env;
 
