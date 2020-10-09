@@ -29,6 +29,7 @@ const updateCampaign = require('./routes/updateCampaign');
 const adminGetPage = require('./routes/adminGetPage');
 const adminGetUserByEmail = require('./routes/adminGetUserByEmail');
 const adminEditUser = require('./routes/adminEditUser');
+require('dotenv').config();
 
 const setupDb = require('./db/setup');
 const getCampaignForDomain = require('./db/getCampaignForDomain');
