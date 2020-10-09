@@ -60,7 +60,6 @@ const {
   BSD_SIGNUP_CODE_ID,
   BSD_SIGNUP_SUPPORT_ID,
   BSD_SIGNUP_VOLUNTEER_ID,
-
   IS_PROD,
 } = process.env;
 

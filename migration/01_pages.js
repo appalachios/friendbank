@@ -15,6 +15,7 @@ const {
 
 (async function() {
   try {
+    console.log(MONGODB_URL);
     const client = await MongoClient.connect(MONGODB_URL, {
       useUnifiedTopology: true,
       useNewUrlParser: true,

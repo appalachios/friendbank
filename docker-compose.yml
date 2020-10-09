@@ -49,4 +49,3 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=eqGfvqgLtaG8gV4
     logging:
         driver: none
-Collapse
