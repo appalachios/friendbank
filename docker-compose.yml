@@ -1,5 +1,5 @@
 version: '3.3'
-​
+
 services:
   webpack:
     build: .
@@ -7,7 +7,7 @@ services:
     volumes:
       - ./src:/usr/src/app/src:cached
       - ./public/dist:/usr/src/app/public/dist:cached
-​
+
   seed:
     build: .
     command: npm run seed
@@ -19,7 +19,7 @@ services:
       - MONGODB_URL=mongodb://bshawfriendbank:eqGfvqgLtaG8gV4@iad2-c13-0.mongo.objectrocket.com:53698,iad2-c13-1.mongo.objectrocket.com:53698,iad2-c13-2.mongo.objectrocket.com:53698/friendbank?replicaSet=14854e07ea3a49569994bf6ee6e47977
     env_file:
       - .env
-​
+
   api:
     build: .
     command: npm run start:api
@@ -39,7 +39,7 @@ services:
     volumes:
       - ./src:/usr/src/app/src:cached
       - ./public/dist:/usr/src/app/public/dist:cached
-​
+      
   mongo:
     image: mongo:4
     ports:
